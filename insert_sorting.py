@@ -17,7 +17,7 @@ def insertionSort(ls):
 N = 10000000
 
 # 오름차순
-ls = list(range(N+1))
+ls = list(range(1, N+1))
 
 start = time.time()
 insertionSort(ls)
