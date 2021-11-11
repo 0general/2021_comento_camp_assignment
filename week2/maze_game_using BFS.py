@@ -21,7 +21,7 @@ dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
 # n X n 행렬
-n = 1000
+n = 20  # 1000
 visited = [[False]*n for _ in range(n)]
 q = deque()
 q.append((0, 0))
@@ -35,6 +35,8 @@ for i in range(n):
     else:
         graph.append(random.choices(code, weights=[5, 1], k=n))
 
+for i in range(n):
+    print(graph[i])
 
 start = time.time()
 bfs()
